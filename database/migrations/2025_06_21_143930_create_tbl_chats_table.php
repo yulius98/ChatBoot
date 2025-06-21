@@ -11,8 +11,8 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('chats', function (Blueprint $table) {
-            $table->id();
+        Schema::create('tbl_chats', function (Blueprint $table) {
+           $table->id();
             $table->string('session_id');
             $table->string('role');
             $table->string('content');
@@ -25,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('chats');
+        Schema::dropIfExists('tbl_chats');
     }
 };

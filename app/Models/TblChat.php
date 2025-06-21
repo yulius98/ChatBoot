@@ -4,7 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Chat extends Model
+class TblChat extends Model
 {
-    protected $guarded = [];
+    protected $guarded =[];
 }
